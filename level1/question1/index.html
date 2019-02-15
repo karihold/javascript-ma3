@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript - MA03 - Question 1</title>
+
 <body>
 
-<!--Contact Form-->
+    <!--Contact Form-->
 
+    <form novalidate name="contact">
 
-<script src="script.js"></script>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" pattern="^[a-zA-Z ]+$" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" pattern="^[a-zA-Z ]+$" placeholder="Your last name..">
+
+        <label for="phonenumber">Phonenumber</label>
+        <input type="tel" id="phonenumber" pattern="^\+?\d+$" name="phonenumber" placeholder="Your phonenumber..">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" name="email"
+            placeholder="Your email..">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
